@@ -6,8 +6,7 @@
 package UNO;
 
 /**
- * Task 4: The OO principle of Encapsulation allows for us tweak and reuse the original card code to fit the requirements of an Uno Card deck.
- * Task 5: The Card class utilizes the inheritance principle along with its high cohesion allows for the code to be flexible enough to be reused and extended in the same or another program
+ * 
  * @author Josh
  */
 public class Cards {
