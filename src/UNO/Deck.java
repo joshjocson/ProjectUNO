@@ -35,6 +35,7 @@ public class Deck {
         int randomColor = r.nextInt(NUM_COLOR);
         int randomValue = r.nextInt(NUM_VALUE);
         return deck[randomColor][randomValue];
+        
     }
     
 //    public void shuffle(){

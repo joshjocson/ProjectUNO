@@ -6,7 +6,7 @@ package UNO;
  */
 public class Hand {
     
-    public Cards[] card;
+    private Cards[] card;
     private int count;
     
     Hand(){
@@ -20,18 +20,46 @@ public class Hand {
         }
     }
     public void addCards(Cards card){
-        Cards[] reference = this.card;
-        this.card = new Cards [this.card.length + 1];
+        Cards[] reference = this.getCard();
+        this.setCard(new Cards[this.getCard().length + 1]);
         
         //Copy all existing/reference cards into cards
         for(int i = 0; i < reference.length; i++){
-            this.card[i] = reference[i];
+            this.getCard()[i] = reference[i];
         }
-        this.card [reference.length] = card;
+        this.getCard() [reference.length] = card;
         System.out.println(card);
     }
     
     public void currentHand(){
         
+    }
+
+    /**
+     * @return the card
+     */
+    public Cards[] getCard() {
+        return card;
+    }
+
+    /**
+     * @param card the card to set
+     */
+    public void setCard(Cards[] card) {
+        this.card = card;
+    }
+
+    /**
+     * @return the count
+     */
+    public int getCount() {
+        return count;
+    }
+
+    /**
+     * @param count the count to set
+     */
+    public void setCount(int count) {
+        this.count = count;
     }
 }

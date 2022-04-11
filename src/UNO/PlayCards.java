@@ -39,7 +39,7 @@ public class PlayCards{
     }
     
     public void wildCard(){
-        Cards.Color.values();
+        System.out.println(Cards.Color.values());
     }
     
     public void drawTwo(){
