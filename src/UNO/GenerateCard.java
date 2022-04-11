@@ -10,8 +10,8 @@ package UNO;
  * @author Josh
  */
 public class GenerateCard {
-    private int handSize = 60;
-    public Cards[] cards = new Cards[handSize]; //Array of Object
+    private int deckSize = 60;
+    public Cards[] cards = new Cards[deckSize]; //Array of Object
     
     public void generateCard(){
         int countCards = 0;
@@ -22,4 +22,6 @@ public class GenerateCard {
             }
         }
     }
+    
+    
 }

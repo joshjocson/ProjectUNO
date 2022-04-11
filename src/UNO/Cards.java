@@ -40,6 +40,6 @@ public class Cards {
     
     @Override
     public String toString(){
-        return color + " of " + value;
+        return color + " " + value;
     }
 }
