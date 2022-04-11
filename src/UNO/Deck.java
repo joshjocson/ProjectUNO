@@ -30,6 +30,7 @@ public class Deck {
         }    
     }
     public Cards draw(){
+
         Random r = new Random();
         int randomColor = r.nextInt(NUM_COLOR);
         int randomValue = r.nextInt(NUM_VALUE);

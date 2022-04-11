@@ -14,7 +14,7 @@ public abstract class Game {
     public static boolean contPrompt(){
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Would you like to draw?");
-        System.out.print("Press Y to draw and N to stop playing: ");
+        System.out.print("Press D to draw and N to not draw: ");
         String isDone = keyboard.next();
         boolean done;
         if (isDone.equalsIgnoreCase("N")) {

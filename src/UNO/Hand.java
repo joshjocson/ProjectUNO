@@ -29,5 +29,9 @@ public class Hand {
         }
         this.card [reference.length] = card;
         System.out.println(card);
-    }   
+    }
+    
+    public void currentHand(){
+        
+    }
 }
