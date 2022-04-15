@@ -12,13 +12,12 @@ package UNO;
 public class Cards {
     
     public enum Color { RED, YELLOW, GREEN, BLUE };
-    public enum Value { ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, SKIP, REVERSE, DRAWTWO, DRAWFOUR, WILDCARD};
+    public enum Value { ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, DRAWTWO, DRAWFOUR, WILDCARD};
     private Color color;      //user defined data type "Color"
     private Value value;    //user defined data type "Value"
 
-    Cards(final Color c, final Value v){
-        this.color = c;
-        this.value = v;
+    Cards(){
+
     }
 
     public Color getColor() {
